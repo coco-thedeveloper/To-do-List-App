@@ -4,15 +4,18 @@ clearAll = document.querySelector(".clear-btn"),
 taskBox = document.querySelector(".task-box");
 const dateElement = document.getElementById("date");
 
-const options = {weekday : "long", month: "short" ,day:"numeric"};
-const today =new Date();
-dateElement.innerHTML = today.toLocaleDateString("en-us", options);
+// const options = {weekday : "long", month: "short" ,day:"numeric"};
+// const today =new Date();
+// dateElement.innerHTML = today.toLocaleDateString("en-us", options);
 
 
 
 let editId,
+dateInput,
 isEditTask = false,
 todos = JSON.parse(localStorage.getItem("todo-list"));
+
+dateInput = document.getElementById("dateInput");
 
 filters.forEach(btn => {
     btn.addEventListener("click", () => {
