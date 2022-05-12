@@ -10,11 +10,11 @@ body{
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: #cce5ff;
+  background: linear-gradient(to top left, #6699ff 0%, #ffffff 82%);
 }
 ::selection{
   color: #fff;
-  background:#cce5ff;
+  background:#ffffff;
 }
 .wrapper{
   max-width: 405px;
