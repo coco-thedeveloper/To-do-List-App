@@ -2,6 +2,13 @@ const taskInput = document.querySelector(".task-input input"),
 filters = document.querySelectorAll(".filters span"),
 clearAll = document.querySelector(".clear-btn"),
 taskBox = document.querySelector(".task-box");
+const dateElement = document.getElementById("date");
+
+const options = {weekday : "long", month: "short" ,day:"numeric"};
+const today =new Date();
+dateElement.innerHTML = today.toLocaleDateString("en-us", options);
+
+
 
 let editId,
 isEditTask = false,
